@@ -26,5 +26,29 @@ public class TableShould {
 
     }
 
+    @Test
+    void winPlayer1WhitLetters(){
+        String player1= "T";
+        String player2= "1";
+        assertEquals(Table.game(player1,player2),"player1 wins");
+
+    }
+
+    @Test
+    void winPlayer2WhitLetters(){
+        String player1= "7";
+        String player2= "K";
+        assertEquals(Table.game(player1,player2),"player1 wins");
+
+    }
+
+    @Test
+    void tieWithLetters(){
+        String player1= "K";
+        String player2= "K";
+        assertEquals(Table.game(player1,player2),"Tie" );
+
+    }
+
 
 }
