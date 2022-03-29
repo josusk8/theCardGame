@@ -11,16 +11,16 @@ public class Table {
     String[] rank = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "T", "J", "Q", "k"};
 
 
-    static String game(int player1, int player2) {
+    static String game(String player1, String player2) {
         String result = "";
 
-        if (player1 > player2) {
+        if (Integer.parseInt(player1) > Integer.parseInt(player2)) {
             result = "player1 wins";
         }
-        if (player1 < player2) {
+        if (Integer.parseInt(player1) < Integer.parseInt(player2)) {
             result = "player2 wins";
         }
-        if (player1 == player2) {
+        if (Integer.parseInt(player1) == Integer.parseInt(player2)) {
             result = "Tie";
         }
 
